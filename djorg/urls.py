@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from bookmarks.models import Bookmark
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('bookmark/', bookmark.site.urls, name='all bookmarks')
 ]
