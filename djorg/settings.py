@@ -16,7 +16,6 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 import os
 from decouple import config 
 
-"python.linting.pylintArgs": ["--load-plugins", "pylint_django"]
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)

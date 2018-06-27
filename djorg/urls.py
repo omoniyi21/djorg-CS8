@@ -19,5 +19,5 @@ from bookmarks.models import Bookmark
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('bookmark/', Bookmark.site.urls, name='all bookmarks')
+    # path('bookmark/', Bookmark.urls, name='all bookmarks')
 ]
