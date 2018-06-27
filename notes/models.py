@@ -10,6 +10,7 @@ class Note(models.Model):
     last_modified = models.DateTimeField(auto_now=True) #difference add the time everytime its updated vvs now_add does it once intiially 
 
     #TODO Tagging system or categories 
+    
 # Create your models here.
 # GUID or UUID - string of characters that are higly unlikely to be duplicated 
 # Bookmark app 
