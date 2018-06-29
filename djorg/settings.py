@@ -15,6 +15,8 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os
 from decouple import config 
+import dj_database_url
+
 
 
 
@@ -29,10 +31,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = config('SECRET_KEY')
+# chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
+# get_random_string(50, chars)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    
+]
 
 
 
