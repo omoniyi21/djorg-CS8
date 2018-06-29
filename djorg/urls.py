@@ -15,10 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from bookmarks.models import Bookmark
+# from bookmarks.models import Bookmark
+from django.conf.urls import url, include
+from rest_framework import routers, serializers, viewsets
+from notes.api import NoteViewSet
+
+router = routers.DefaultRouter()
+router.register(r'notes', NoteViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # url(r'^api-auth/', include('rest_framework.urls'))
+    url(r'^api-auth/', include('rest_framework.urls'))
     # path('bookmark/', Bookmark.urls, name='all bookmarks')
 ]
