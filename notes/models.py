@@ -19,6 +19,8 @@ class PersonalNote(Note):
 
 
 
+
+
 # Create your models here.
 # GUID or UUID - string of characters that are higly unlikely to be duplicated 
 # Bookmark app 
