@@ -19,5 +19,6 @@ from bookmarks.models import Bookmark
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # url(r'^api-auth/', include('rest_framework.urls'))
     # path('bookmark/', Bookmark.urls, name='all bookmarks')
 ]
