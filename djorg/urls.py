@@ -24,7 +24,7 @@ from rest_framework.authtoken import views
 router = routers.DefaultRouter()
 router.register(r'notes', NoteViewSet)
 # router.register(r'personal_notes', PersonalNoteViewSet)
-# router.register(r'bookmarks',BookmarkViewSet)
+
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
