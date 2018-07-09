@@ -1,1 +1,1 @@
-web: gunicorn djorg-omoniyi.wsgi
+web: gunicorn warm-ravine-46039.wsgi
