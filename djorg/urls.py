@@ -28,8 +28,8 @@ router.register(r'bookmarks',BookmarkViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('bookmarks/', include('bookmarks.urls'))
+    path('bookmarks/', include('bookmarks.urls')),
     # url(r'^api-auth/', include('rest_framework.urls')),
-    path(r'api/', include(router.urls))
+    path(r'api/', include(router.urls)),
     re_path(r'^api-token-auth/', views.obtain_auth_token)
 ]
