@@ -27,9 +27,9 @@ router.register(r'notes', NoteViewSet)
 router.register(r'bookmarks',BookmarkViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls), 
+    path('bookmarks/', include('bookmarks.urls'))
     # url(r'^api-auth/', include('rest_framework.urls')),
     path(r'api/', include(router.urls))
-    path('bookmark/', include('bookmarks.urls'))
     re_path(r'^api-token-auth/', views.obtain_auth_token)
 ]
