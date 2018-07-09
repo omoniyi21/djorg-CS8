@@ -37,7 +37,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOST').split(',')
-
+DATABASES['default'] = dj_database_url.config(default='postgres://aoeslefkbavnny:8260dedb2bdd094208a3a870852eb4bc970ae0e76af53fcdf643ffbc3fe0312e@ec2-54-83-59-144.compute-1.amazonaws.com:5432/dcdi6lc1qn0qhf')
 
 
 
