@@ -18,17 +18,17 @@ from django.urls import path
 from django.conf.urls import url, include, re_path
 from rest_framework import routers, serializers, viewsets
 from notes.api import NoteViewSet
-from bookmarks.api import BookmarkViewSet
+# from bookmarks.api import BookmarkViewSet
 from rest_framework.authtoken import views
 
 router = routers.DefaultRouter()
 router.register(r'notes', NoteViewSet)
 # router.register(r'personal_notes', PersonalNoteViewSet)
-router.register(r'bookmarks',BookmarkViewSet)
+# router.register(r'bookmarks',BookmarkViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls), 
-    path('bookmarks/', include('bookmarks.urls')),
+    # path('bookmarks/', include('bookmarks.urls')),
     # url(r'^api-auth/', include('rest_framework.urls')),
     path(r'api/', include(router.urls)),
     re_path(r'^api-token-auth/', views.obtain_auth_token)
