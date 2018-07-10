@@ -12,7 +12,7 @@ class NoteSerializer(serializers.HyperlinkedModelSerializer):
 
 class NoteViewSet(viewsets.ModelViewSet):
     queryset = Note.objects.all()
-    serializers_class = NoteSerializer
+    serializer_class = NoteSerializer
 
 
 class PersonalNoteSerializer(serializers.HyperlinkedModelSerializer):
