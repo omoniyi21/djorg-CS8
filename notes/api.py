@@ -22,7 +22,7 @@ class PersonalNoteSerializer(serializers.HyperlinkedModelSerializer):
 
     def create(self, validate_date):
         user = self.context['request'].user
-        personal_note = PeronsalNote.objects.creat(
+        personal_note = PeronsalNote.objects.create(
             user=user, **validated_data)
         return personal_note
         
